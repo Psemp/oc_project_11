@@ -60,7 +60,7 @@ def assign_character_start(range_xy, maze):
         rand_x = random.choice(sample_x)
         if maze[-2, rand_x] == 0:
             floor = True
-            bernard = Character(name="Bernard", char_x=rand_x, char_y=len(maze), map_identifier=2, is_npc=False)
+            bernard = Character(name="Bernard", char_x=rand_x, char_y=len(maze) - 2, map_identifier=2, is_npc=False)
             characters.append(bernard)
 
     return characters
