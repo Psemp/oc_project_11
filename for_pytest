@@ -1,0 +1,2 @@
+use python -m pytest for tests because pytest alone is fucked
+cannot test randomness so most of maze generating functions are overlooked
