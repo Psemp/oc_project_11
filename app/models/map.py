@@ -45,15 +45,5 @@ class Map:
                 cell_idx += 1
             row_idx += 1
 
-    def update_pos(self, identifier, old_position, new_position):
-        """updates the position of an item or char on the map"""
-        self.box[old_position.y_axis][old_position.x_axis] = 0  # Floor
-        self.box[new_position.y_axis][new_position.x_axis] = identifier
-
-    def remove(self, identifier, position):
-        """removes an item or char based on its identifier and replaces
-        it by floor (0)"""
-        self.box[position.y_axis][position.x_axis] = 0  # Floor
-
     def insert(self, identifier, position):
         self.box[position.y_axis][position.x_axis] = identifier
