@@ -1,0 +1,4 @@
+[run]
+omit =
+    */tests/*
+    ./app/models/node.py
